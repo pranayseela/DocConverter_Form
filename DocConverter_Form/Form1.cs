@@ -23,7 +23,7 @@ namespace DocConverter_Form
         {
             //Load Document  
             Document doc = new Document();
-            //Pass path of Word Document in LoadFromFile method  
+            //Pass path of Word Document in LoadFromFile method
             doc.LoadFromFile(@"C:\test.txt");
             //doc.LoadFromFile(@"C:\Users\pseela\Work Folders\Documents\test.txt");
             //Pass Document Name and FileFormat of Document as Parameter in SaveToFile Method  
