@@ -26,15 +26,19 @@ namespace DocConverter_Form
             
             doc.LoadFromFile(@"C:\test.txt");
             
-            doc.SaveToFile("Convert.PDF", FileFormat.PDF);
-            doc.SaveToFile("Convert.Doc", FileFormat.Doc);
-            doc.SaveToFile("Convert.Docx", FileFormat.Docx);
-            doc.SaveToFile("Convert.Xml", FileFormat.Xml);
+            doc.SaveToFile("SavedFiles\\Convert.PDF", FileFormat.PDF);
+            doc.SaveToFile("SavedFiles\\Convert.Doc", FileFormat.Doc);
+            doc.SaveToFile("SavedFiles\\Convert.Docx", FileFormat.Docx);
+            doc.SaveToFile("SavedFiles\\Convert.Xml", FileFormat.Xml);
+            doc.SaveToFile("SavedFiles\\Convert.XPS", FileFormat.XPS);
+            doc.SaveToFile("SavedFiles\\Convert.Html", FileFormat.Html);
 
-            System.Diagnostics.Process.Start("Convert.PDF");
-            System.Diagnostics.Process.Start("Convert.Doc");
-            System.Diagnostics.Process.Start("Convert.Docx");
-            System.Diagnostics.Process.Start("Convert.Xml");
+
+            //to open the saved files
+            System.Diagnostics.Process.Start("SavedFiles\\Convert.PDF");
+            //System.Diagnostics.Process.Start("SavedFiles\\Convert.Doc");
+            //System.Diagnostics.Process.Start("SavedFiles\\Convert.Docx");
+            //System.Diagnostics.Process.Start("SavedFiles\\Convert.Xml");
         }
     }
 }
