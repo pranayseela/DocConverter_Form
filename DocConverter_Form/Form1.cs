@@ -21,15 +21,20 @@ namespace DocConverter_Form
 
         private void BtnConvert_Click(object sender, EventArgs e)
         {
-            //Load Document  
+            
             Document doc = new Document();
-            //Pass path of Word Document in LoadFromFile method
+            
             doc.LoadFromFile(@"C:\test.txt");
-            //doc.LoadFromFile(@"C:\Users\pseela\Work Folders\Documents\test.txt");
-            //Pass Document Name and FileFormat of Document as Parameter in SaveToFile Method  
+            
             doc.SaveToFile("Convert.PDF", FileFormat.PDF);
-            //Launch Document  
+            doc.SaveToFile("Convert.Doc", FileFormat.Doc);
+            doc.SaveToFile("Convert.Docx", FileFormat.Docx);
+            doc.SaveToFile("Convert.Xml", FileFormat.Xml);
+
             System.Diagnostics.Process.Start("Convert.PDF");
+            System.Diagnostics.Process.Start("Convert.Doc");
+            System.Diagnostics.Process.Start("Convert.Docx");
+            System.Diagnostics.Process.Start("Convert.Xml");
         }
     }
 }

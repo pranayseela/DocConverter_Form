@@ -33,7 +33,7 @@
             // 
             // BtnConvert
             // 
-            this.BtnConvert.Location = new System.Drawing.Point(1030, 569);
+            this.BtnConvert.Location = new System.Drawing.Point(1030, 572);
             this.BtnConvert.Name = "BtnConvert";
             this.BtnConvert.Size = new System.Drawing.Size(465, 195);
             this.BtnConvert.TabIndex = 0;
